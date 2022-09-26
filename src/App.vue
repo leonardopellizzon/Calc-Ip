@@ -1,6 +1,5 @@
 <template>
   <div class="m-5">
-  <div class="input-group mb-3">
     <input
       type="text"
       class="form-control text-center"
@@ -18,7 +17,6 @@
     <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click="richiedi(indirizzo,prefisso)">
       Calcola
     </button>
-  </div>
   <div class="table-responsive-xl  rounded">
     <table class="table table-dark table-striped">
       <tbody>
