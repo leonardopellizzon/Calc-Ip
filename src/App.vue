@@ -77,7 +77,6 @@ export default {
   methods: {
     richiedi(indirizzo, prefisso) {
       if(indirizzo == undefined || prefisso == undefined) return
-
       this.axios
         .get("https://networkcalc.com/api/ip/"+indirizzo+"/" + prefisso)
         .then((res) => {
