@@ -2,14 +2,14 @@
   <div class="m-5">
     <input
       type="text"
-      class="form-control text-center"
+      class="form-control text-center mb-2"
       placeholder="Indirizzo"
       aria-label="Username"
       v-model="indirizzo"
     />
     <input
       type="text"
-      class="form-control text-center"
+      class="form-control text-center mb-2"
       placeholder="Prefisso"
       aria-label="Server"
       v-model="prefisso"
