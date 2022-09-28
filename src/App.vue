@@ -49,7 +49,7 @@
       Inserisci dati
     </button>
 
-    <div class="table-responsive-xl table-bordered border-ligth">
+    <div class="table-responsive-xl rounded">
       <table class="table table-dark table-striped">
         <tbody>
           <tr class="table-danger">
