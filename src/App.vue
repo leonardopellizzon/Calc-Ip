@@ -54,31 +54,31 @@
         <tbody>
           <tr class="table-danger">
             <th scope="row">Indirizzo analizzato</th>
-            <td>{{ indirizzo_cidr }}</td>
+            <td v-if="indirizzo_cidr != null">{{ indirizzo_cidr }}</td>
           </tr>
           <tr class="table-success">
             <th scope="row">Subnet mask</th>
-            <td>{{ subnet }}</td>
-          </tr>
-          <tr class="table-primary">
-            <th scope="row">Broadcast</th>
-            <td>{{ broadcast }}</td>
+            <td v-if="subnet != null">{{ subnet }}</td>
           </tr>
           <tr class="table-primary">
             <th scope="row">ID rete</th>
-            <td>{{ idRete }}</td>
+            <td v-if="idRete != null">{{ idRete }}</td>
           </tr>
-          <tr>
-            <th scope="row">Primo indirizzo disponibile</th>
-            <td>{{ primoInd }}</td>
-          </tr>
-          <tr>
-            <th scope="row">Ultimo indirizzo disponibile</th>
-            <td>{{ ultimoInd }}</td>
+          <tr class="table-primary">
+            <th scope="row">Broadcast</th>
+            <td v-if="broadcast != null">{{ broadcast }}</td>
           </tr>
           <tr class="table-warning">
             <th scope="row">Host totali</th>
-            <td>{{ numeroHost }}</td>
+            <td v-if="numeroHost != null">{{ numeroHost }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Primo indirizzo disponibile</th>
+            <td v-if="primoInd != null">{{ primoInd }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Ultimo indirizzo disponibile</th>
+            <td v-if="ultimoInd != null">{{ ultimoInd }}</td>
           </tr>
         </tbody>
       </table>
@@ -127,7 +127,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Karla, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
